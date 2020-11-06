@@ -1,3 +1,23 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+ul {
+  & li {
+    position: relative;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    @media (min-width: $breakpoint-xxl) {
+      font-size: 24px;
+    }
+    &:before {
+      content: '';
+      width: 13px;
+      height: 13px;
+      background: $darkGreyColor;
+      border-radius: 100%;
+      display: block;
+      margin-right: 20px;
+    }
+  }
+}
