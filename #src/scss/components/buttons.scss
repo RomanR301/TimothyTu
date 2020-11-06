@@ -19,6 +19,12 @@
     }
   }
   &-black {
-    
+    background: $blackColor;
+    border: 2px solid $blackColor;
+    color: $whiteColor;
+    &:hover {
+      background: transparent;
+      color: $blackColor;
+    }
   }
 }

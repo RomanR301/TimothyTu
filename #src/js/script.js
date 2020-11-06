@@ -4,6 +4,15 @@ let front = {
   $body: $('body'),
   init: function () {
       this.events();
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 18,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      });
   },
   toggleNav: function () {
     if (!this.hamburger.hasClass('open')) {
@@ -120,6 +129,7 @@ let modal = {
 jQuery(function () {
   front.init();
   modal.init();
+
     
 });
 
