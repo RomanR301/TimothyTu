@@ -245,9 +245,10 @@
     padding-top: 80px;
     & iframe {
       width: 640px;
-      height: 500px;
+      height: 360px;
+      box-shadow: 6px 7px 6px rgba(0,0,0,.5);
       @media (max-width: $breakpoint-md) {
-        width: auto;
+        width: 275px;
         height: auto;
       }
     }

@@ -1,0 +1,10 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.guide-page {
+  &-video {
+    & .section-video-content {
+      padding-top: 10px;
+    }
+  }
+}

@@ -1818,7 +1818,9 @@ button.swiper-pagination-bullet {
 
 .section-video-content iframe {
   width: 640px;
-  height: 500px;
+  height: 360px;
+  -webkit-box-shadow: 6px 7px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 6px 7px 6px rgba(0, 0, 0, 0.5);
 }
 
 .services {
@@ -2016,6 +2018,10 @@ button.swiper-pagination-bullet {
 
 .cases-item__description p {
   margin-bottom: 40px;
+}
+
+.guide-page-video .section-video-content {
+  padding-top: 10px;
 }
 
 @media (min-width: 576px) {
@@ -2691,7 +2697,7 @@ button.swiper-pagination-bullet {
   }
 
   .section-video-content iframe {
-    width: auto;
+    width: 275px;
     height: auto;
   }
 
