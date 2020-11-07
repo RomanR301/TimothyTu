@@ -12,7 +12,23 @@ let front = {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
+          breakpoints: {
+            320: {
+              centeredSlides: true,
+              slidesPerView: 'auto',
+            },
+            768: {
+                centeredSlides: true,
+                slidesPerView: 'auto',
+            },
+            992: {
+              slidesPerView: 4,
+              centeredSlides: false,
+            },
+          }
       });
+
+    
   },
   toggleNav: function () {
     if (!this.hamburger.hasClass('open')) {

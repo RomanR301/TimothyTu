@@ -17,12 +17,15 @@
   top: 0;
   width: 100px;
   height: 72px;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 20px;
   outline: none;
   cursor: pointer;
+  display: none;
+  @media (max-width: $breakpoint-xl) {
+    display: flex;
+  }
   & img {
     display: block;
     transform: rotate(90deg);
