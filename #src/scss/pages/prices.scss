@@ -1,0 +1,163 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.prices {
+  background: $lightGreyColor;
+  padding: 60px 0 80px 0;
+  margin: 0 20px;
+  @media (max-width: $breakpoint-md) {
+    margin: 0;
+  }
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    width: 400px;
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    border: 1px solid $blackColor;
+    border-radius: 2px;
+    @media (max-width: $breakpoint-lg) {
+      width: 45%;
+    }
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &.standart-cards {
+      & .prices__item_heading {
+        background: $lightBlue;
+        color: $blueColor;
+      }
+    }
+    &.premium-cards {
+      & .prices__item_heading {
+        background: $blueColor;
+        color: $whiteColor;
+      }
+    }
+    &_heading {
+      font-weight: 700;
+      padding: 27px 15px;
+      text-align: center;
+      border-bottom: 1px solid $blackColor;
+    }
+    &_content {
+      padding: 80px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: $breakpoint-md) {
+        padding: 30px 15px;
+      }
+      & ul li {
+        display: flex;
+        align-items: center;
+        &:before {
+          display: none;
+        }
+        font-size: 16px;
+        & span:first-child {
+          display: block;
+          min-width: 190px;
+        }
+        & span:last-child {
+          color: $blueColor;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.prices-cta {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+  &__list {
+    width: 43%;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      margin-top: 110px;
+    }
+    & a {
+      color: $orangeColor;
+      font-weight: 700;
+      border-bottom: 1px solid transparent;
+      @include transition(0.3);
+      &:hover {
+        border-color: $orangeColor;
+      }
+    }
+    & li {
+      padding-left: 30px;
+      position: relative;
+      display: block;
+      margin-bottom: 30px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 13px;
+        font-size: 12px;
+      }
+      &:before {
+        display: inline-block;
+        background: url('../../img/icons/checkmark.svg');
+        background-repeat: no-repeat;
+        border-radius: 0;
+        position: absolute;
+        left: 0;
+        top: 16px;
+        @media (max-width: $breakpoint-md) {
+          top: 6px;
+        }
+      }
+    }
+  }
+  &__get-started {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+  }
+  &__btn {
+    @media (max-width: $breakpoint-md) {
+      position: absolute;
+      top: 0;
+    }
+  }
+  &__more {
+    margin-top: 70px;
+    & h4 {
+      font-weight: 600;
+    }
+    & span {
+      color: $darkGreyColor;
+    }
+    & a {
+      color: $orangeColor;
+      font-weight: 700;
+      border-bottom: 1px solid transparent;
+      @include transition(0.3);
+      &:hover {
+        border-color: $orangeColor;
+      }
+    }
+  }
+}
+
+.prices-services {
+  background: $lightBlue;
+}
