@@ -2235,6 +2235,7 @@ button.swiper-pagination-bullet {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     padding: 10px 0;
+    overflow-y: auto;
   }
 
   .menu {
