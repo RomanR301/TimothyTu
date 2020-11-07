@@ -4,7 +4,7 @@ let front = {
   $body: $('body'),
   init: function () {
       this.events();
-      var swiper = new Swiper('.swiper-container', {
+      var swiper = new Swiper('.gallery-slider', {
         slidesPerView: 4,
         spaceBetween: 18,
         loop: true,
@@ -27,9 +27,78 @@ let front = {
             },
           }
       });
-
-    
+      var featuresSlider = new Swiper('.features-slider', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        allowTouchMove: false,
+        loop: true,
+        breakpoints: {
+            320: {
+              allowTouchMove: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              freeMode: true,
+            },
+            767: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              allowTouchMove: true,
+              centeredSlides: false,
+            },
+            992: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+              allowTouchMove: false,
+            },
+        }
+    });
+      var servicesSlider = new Swiper('.services-slider', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        allowTouchMove: false,
+        loop: true,
+        breakpoints: {
+            320: {
+              allowTouchMove: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              freeMode: true,
+            },
+            767: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              allowTouchMove: true,
+              centeredSlides: false,
+            },
+            992: {
+              slidesPerView: 5,
+              spaceBetween: 30,
+              allowTouchMove: false,
+            },
+        }
+    });
+    var clientsSlider = new Swiper('.clients-slider', {
+        slidesPerView: 6,
+        spaceBetween: 40,
+        allowTouchMove: false,
+        loop: true,
+        breakpoints: {
+            320: {
+              allowTouchMove: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              freeMode: true,
+              spaceBetween: 20,
+            },
+            800: {
+                slidesPerView: 6,
+                spaceBetween: 40,
+                allowTouchMove: false,
+            },
+        }
+    });
   },
+  
   toggleNav: function () {
     if (!this.hamburger.hasClass('open')) {
         this.hamburger.addClass('open');
