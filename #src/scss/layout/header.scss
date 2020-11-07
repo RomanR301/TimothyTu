@@ -1,37 +1,55 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-// .body-padding {
-//   padding-top: 210px;
-//   @media (min-width: $breakpoint-xxl) {
-//     padding-top: 90px;
-//   }
-// }
+.logo-mobile {
+  display: none;
+  @media (max-width: $breakpoint-xl) {
+    display: block;
+  }
+}
+.logo-desktop {
+  @media (max-width: $breakpoint-xl) {
+    display: none;
+  }
+}
+
 .header {
   position: relative;
-  height: 210px;
   &-top {
     background: $lightGreyColor;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    @media (max-width: $breakpoint-xl) {
+      background: $whiteColor;
+    }
+    @media (max-width: $breakpoint-md) {
+      background: $lightGreyColor;
+    }
   }
   &-prev-page {
     & a {
       display: flex;
       align-items: center;
+      @include transition(.3);
       & img {
         border: 1px solid #AFAFAF;
         padding: 8px;
         border-radius: 100%;
         margin-right: 20px;
       }
+      &:hover {
+        transform: translate(-5px, 0);
+      }
     }
     & span {
       font-size: 16px;
       color: $greyColor;
       text-transform: uppercase;
+      @media (max-width: $breakpoint-xl) {
+        display: none;
+      }
     }
   }
   &-control {
@@ -43,18 +61,39 @@
     margin-right: 40px;
     display: flex;
     align-items: center;
+    @media (max-width: $breakpoint-xl) {
+      margin-right: 15px;
+    }
     & img {
       margin-right: 5px;
+    }
+    & span {
+      @media (max-width: $breakpoint-xl) {
+        display: none;
+      }
     }
   }
   &-favourite {
     display: flex;
     align-items: center;
     margin-right: 10px;
+    @media (max-width: $breakpoint-xl) {
+      margin-right: 15px;
+    }
   }
   &-account {
     display: flex;
     align-items: center;
+    @media (max-width: $breakpoint-xl) {
+      margin-right: 15px;
+    }
+    &-mobile {
+      display: none;
+      @media (max-width: $breakpoint-xl) {
+        display: flex;
+        align-items: center;
+      }
+    }
   }
   &-register {
     margin-right: 16px;
@@ -72,6 +111,9 @@
     font-size: 12px;
     color: $darkGreyColor;
     position: relative;
+    @media (max-width: $breakpoint-xl) {
+      display: none;
+    }
     &:after {
       content: '';
       background: $darkGreyColor;
@@ -87,6 +129,15 @@
       &:after {
         opacity: 1;
       }
+    }
+  }
+  &-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 15px;
+    @media (max-width: $breakpoint-xl) {
+      justify-content: center;
     }
   }
 }

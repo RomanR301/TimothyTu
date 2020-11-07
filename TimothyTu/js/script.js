@@ -27,6 +27,7 @@ let front = {
     },
 
 
+
   openTab: function (element, tabName, parent) {
       let i, tab_content, tab_links;
 
@@ -65,6 +66,9 @@ let front = {
       $(document).on('click', '.hamburger', function () {
           self.toggleNav();
       });
+      $(document).on('click', '.menu-toggle', function (){
+          $(this).next('ul').slideToggle();
+      })
   }
 };
 
