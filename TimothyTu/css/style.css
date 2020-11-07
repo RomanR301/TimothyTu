@@ -487,6 +487,27 @@ ul li:before {
   margin-top: 80px;
 }
 
+.card-pickup-page {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-pickup-page .section-video-content iframe {
+  width: 940px;
+  height: 530px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .container {
   max-width: 1440px;
   margin: auto;
@@ -2889,6 +2910,11 @@ button.swiper-pagination-bullet {
     margin-top: 70px;
   }
 
+  .card-pickup-page .section-video-content iframe {
+    width: 690px;
+    height: 390px;
+  }
+
   .gallery {
     margin-bottom: 0;
   }
@@ -2988,6 +3014,11 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 767px) {
+  .card-pickup-page .section-video-content iframe {
+    width: 540px;
+    height: 290px;
+  }
+
   .m-0-mob {
     margin: 0;
   }
@@ -3312,6 +3343,11 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 575px) {
+  .card-pickup-page .section-video-content iframe {
+    width: 320px;
+    height: 170px;
+  }
+
   .m-row {
     margin: 0 !important;
   }
