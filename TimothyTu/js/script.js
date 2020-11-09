@@ -109,7 +109,7 @@ let front = {
               freeMode: true,
               spaceBetween: 20,
             },
-            800: {
+            768: {
                 slidesPerView: 6,
                 spaceBetween: 40,
                 allowTouchMove: false,
