@@ -39,6 +39,7 @@
       @include transition(.3);
       @media (max-width: $breakpoint-xl) {
         width: 24px;
+        height: 24px;
       }
       & img {
         border: 1px solid #AFAFAF;
@@ -49,6 +50,7 @@
           padding: 4px;
           width: 100%;
           display: block;
+          height: 100%;
         }
       }
       &:hover {
@@ -67,7 +69,6 @@
   &-control {
     display: flex;
     align-items: center;
-    // margin-right: 20px;  
   }
   &-search {
     margin-right: 40px;
@@ -170,5 +171,18 @@
   }
 }
 
-
-
+@media (max-width: $breakpoint-md) {
+  .header-top {
+    height: 38px;
+    padding: 0 15px;
+    & .container, .row, .col-xs-12, .header-control {
+      height: 100%;
+    }
+    & .col-xs-12 {
+      align-items: center;
+    }
+  }
+  .header-main {
+    padding: 17px 15px;
+  }
+}

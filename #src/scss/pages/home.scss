@@ -3,13 +3,11 @@
 
 
 .main-screen {
-  // height: calc(100vh - 210px);
   background: $lightGreyColor;
   margin-bottom: 60px;
   position: relative;
   @media (max-width: $breakpoint-xl) {
-    // height: calc(100vh - 178px);
-    height: 450px;
+    height: 460px;
   }
   @media (max-width: $breakpoint-md) {
     margin-bottom: 0;
@@ -38,11 +36,11 @@
       @media (max-width: $breakpoint-md) {
         color: $whiteColor;
         font-size: 28px;
+        max-width: 90%;
       }
     }
     & p {
       font-weight: 700;
-      // @include fontSize(12, 28);
       font-size: 24px;
       line-height: 2;
       color: $blueColor;
@@ -52,6 +50,8 @@
       }
       @media (max-width: $breakpoint-md) {
         color: $whiteColor;
+        font-size: 12px;
+        max-width: 70%;
       }
     }
   }

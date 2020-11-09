@@ -2897,12 +2897,14 @@ button.swiper-pagination-bullet {
 
   .header-prev-page a {
     width: 24px;
+    height: 24px;
   }
 
   .header-prev-page a img {
     padding: 4px;
     width: 100%;
     display: block;
+    height: 100%;
   }
 
   .header-prev-page span {
@@ -2950,7 +2952,7 @@ button.swiper-pagination-bullet {
   }
 
   .main-screen {
-    height: 450px;
+    height: 460px;
   }
 
   .main-screen__title {
@@ -3175,6 +3177,28 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .header-top {
+    height: 38px;
+    padding: 0 15px;
+  }
+
+  .header-top .container,
+  .header-top .row,
+  .header-top .col-xs-12,
+  .header-top .header-control {
+    height: 100%;
+  }
+
+  .header-top .col-xs-12 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .header-main {
+    padding: 17px 15px;
+  }
+
   .main-screen {
     margin-bottom: 0;
   }
@@ -3186,10 +3210,13 @@ button.swiper-pagination-bullet {
   .main-screen__title h1 {
     color: #ffffff;
     font-size: 28px;
+    max-width: 90%;
   }
 
   .main-screen__title p {
     color: #ffffff;
+    font-size: 12px;
+    max-width: 70%;
   }
 
   .main-screen__text {
