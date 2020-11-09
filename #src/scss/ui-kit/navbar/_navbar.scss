@@ -2,9 +2,9 @@
 @import "./#src/scss/abstracts/variables.scss";
 
 
-.hidden-lg {
+.hidden-xl {
   display: none;
-  @media (max-width: $breakpoint-lg) {
+  @media (max-width: $breakpoint-xl) {
     display: block;
   }
 }
@@ -132,7 +132,7 @@
   display: none;
   width: 45px;
   height: 45px;
-  margin-right: -30px;
+  // margin-right: -30px;
   position: relative;
   z-index: 103;
   @media (max-width: $breakpoint-xl) {
@@ -140,7 +140,7 @@
   } 
   & span {
     position: absolute;
-    right: 15px;
+    right: 0;
     display: block;
     width: 25px;
     background: $blackColor;
@@ -152,13 +152,13 @@
     top: calc(50% - 8.5px);
   }
   & span:nth-child(2) {
-    top: calc(50% - 2.5px);
+    top: calc(50% - 1.5px);
   }
   & span:nth-child(3) {
-    top: calc(50% - 2.5px);
+    top: calc(50% - 1.5px);
   }
   & span:nth-child(4) {
-    top: calc(50% + 3.5px);
+    top: calc(50% + 5.5px);
   }
   &.open {
     & span {
