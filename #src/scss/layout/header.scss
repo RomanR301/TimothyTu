@@ -171,7 +171,7 @@
   }
 }
 
-@media (max-width: $breakpoint-md) {
+@media (max-width: $breakpoint-xl) {
   .header-top {
     height: 38px;
     padding: 0 15px;
@@ -183,6 +183,12 @@
     }
   }
   .header-main {
-    padding: 17px 15px;
+    padding: 0 15px 25px 15px;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .header-main {
+    padding: 0 15px 17px 15px;
   }
 }
