@@ -258,6 +258,10 @@ input[type=number] {
   margin-bottom: 50px;
 }
 
+.section-subheading {
+  font-weight: 500;
+}
+
 .hidden-xl {
   display: none;
 }
@@ -338,6 +342,7 @@ input[type=number] {
   color: #4F4F4F;
   font-size: 16px;
   position: relative;
+  font-weight: 500;
 }
 
 .menu-item a:before {
@@ -879,6 +884,7 @@ ul li:before {
   font-size: 12px;
   color: #4F4F4F;
   position: relative;
+  font-weight: 500;
 }
 
 .header-login:after,
@@ -1767,6 +1773,7 @@ button.swiper-pagination-bullet {
 .gallery-container .swiper-button-next {
   position: static;
   outline: none;
+  margin-top: 0;
   color: #000000;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -2932,6 +2939,10 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .header-main {
+    padding-top: 0;
+  }
+
   .header-main .col-xs-12 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3168,6 +3179,10 @@ button.swiper-pagination-bullet {
     margin-bottom: 0;
   }
 
+  .main-screen__title {
+    margin-bottom: 30px;
+  }
+
   .main-screen__title h1 {
     color: #ffffff;
     font-size: 28px;
@@ -3201,7 +3216,7 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 30px 0 0 0;
+    margin: 0 0 0 0;
   }
 
   .main-screen__btn .btn {
