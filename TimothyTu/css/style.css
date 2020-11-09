@@ -361,7 +361,7 @@ input[type=number] {
 
 .hamburger {
   display: none;
-  width: 45px;
+  width: 40px;
   height: 45px;
   position: relative;
   z-index: 103;
@@ -1742,6 +1742,10 @@ button.swiper-pagination-bullet {
   font-weight: 500;
 }
 
+.main-screen .main-screen-image-tablet {
+  display: none;
+}
+
 .gallery {
   padding: 60px 0;
   margin-bottom: 60px;
@@ -2935,7 +2939,11 @@ button.swiper-pagination-bullet {
   }
 
   .main-screen {
-    height: calc(100vh - 178px);
+    height: 450px;
+  }
+
+  .main-screen__title {
+    margin-bottom: 40px;
   }
 
   .main-screen__title h1 {
@@ -2955,6 +2963,10 @@ button.swiper-pagination-bullet {
        object-fit: cover;
   }
 
+  .main-screen__list {
+    margin-bottom: 40px;
+  }
+
   .main-screen__list li {
     font-size: 14px;
     margin-bottom: 10px;
@@ -2962,6 +2974,34 @@ button.swiper-pagination-bullet {
 
   .main-screen__list li:before {
     display: none;
+  }
+
+  .main-screen .main-screen-image-tablet {
+    display: block;
+  }
+
+  .main-screen .main-screen-image-desktop {
+    display: none;
+  }
+
+  .services__logo {
+    height: 140px;
+  }
+
+  .services__logo img {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .services__title {
+    font-size: 12px;
+  }
+
+  .services__description {
+    font-size: 12px;
   }
 
   .cases-main {
@@ -3168,6 +3208,14 @@ button.swiper-pagination-bullet {
     border: 1px solid #FFFEFE;
   }
 
+  .main-screen .main-screen-image-tablet {
+    display: none;
+  }
+
+  .main-screen .main-screen-image-desktop {
+    display: block;
+  }
+
   .gallery .text-center {
     padding: 0 30px;
   }
@@ -3188,6 +3236,10 @@ button.swiper-pagination-bullet {
     width: 45%;
   }
 
+  .features__logo img {
+    width: 80px;
+  }
+
   .section-video-content iframe {
     width: 275px;
     height: auto;
@@ -3205,12 +3257,21 @@ button.swiper-pagination-bullet {
     width: 45%;
   }
 
+  .services__logo {
+    height: 120px;
+  }
+
+  .services__logo img {
+    width: 70px;
+    height: 70px;
+  }
+
   .clients-9 {
     margin: 20px 0;
   }
 
   .clients {
-    padding: 0;
+    padding: 80px 0;
   }
 
   .clients-slider .swiper-slide {

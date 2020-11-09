@@ -52,31 +52,50 @@ let front = {
             },
         }
     });
-      var servicesSlider = new Swiper('.services-slider', {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        allowTouchMove: false,
-        loop: true,
-        breakpoints: {
-            320: {
-              allowTouchMove: true,
-              centeredSlides: true,
-              slidesPerView: 'auto',
-              freeMode: true,
-            },
-            767: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-              allowTouchMove: true,
-              centeredSlides: false,
-            },
-            992: {
-              slidesPerView: 5,
-              spaceBetween: 30,
-              allowTouchMove: false,
-            },
-        }
-    });
+    //   var servicesSlider = new Swiper('.services-slider', {
+    //     slidesPerView: 5,
+    //     spaceBetween: 30,
+    //     allowTouchMove: false,
+    //     loop: true,
+    //     breakpoints: {
+    //         320: {
+    //           allowTouchMove: true,
+    //           centeredSlides: true,
+    //           slidesPerView: 'auto',
+    //           freeMode: true,
+    //         },
+    //         767: {
+    //           slidesPerView: 3,
+    //           spaceBetween: 30,
+    //           allowTouchMove: true,
+    //           centeredSlides: false,
+    //         },
+    //         992: {
+    //           slidesPerView: 5,
+    //           spaceBetween: 30,
+    //           allowTouchMove: false,
+    //         },
+    //     }
+    // });
+    var servicesSlider = new Swiper('.services-slider', {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      allowTouchMove: false,
+      loop: true,
+      breakpoints: {
+          320: {
+            allowTouchMove: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            freeMode: true,
+          },
+          767: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            allowTouchMove: false,
+          },
+      }
+  });
     var clientsSlider = new Swiper('.clients-slider', {
         slidesPerView: 6,
         spaceBetween: 40,
