@@ -370,7 +370,7 @@
       align-items: flex-start;
       justify-content: center;
       @media (max-width: $breakpoint-md) {
-        width: 45%;
+        width: 42%;
       }
     }
   }
@@ -397,8 +397,8 @@
       height: auto;
       margin-bottom: 30px;
       & img {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
       }
     }
     &.services__logo_smaller {
@@ -422,6 +422,7 @@
     // width: 70%;
     @media (max-width: $breakpoint-xl) {
       font-size: 12px;
+      padding: 0 5px;
     }
   }
 }

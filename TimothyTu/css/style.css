@@ -3091,6 +3091,7 @@ button.swiper-pagination-bullet {
 
   .services__description {
     font-size: 12px;
+    padding: 0 5px;
   }
 
   .cases-main {
@@ -3451,7 +3452,7 @@ button.swiper-pagination-bullet {
   }
 
   .services-slider .swiper-slide {
-    width: 45%;
+    width: 42%;
   }
 
   .services__logo {
@@ -3460,8 +3461,8 @@ button.swiper-pagination-bullet {
   }
 
   .services__logo img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
   }
 
   .services__logo.services__logo_smaller img {
