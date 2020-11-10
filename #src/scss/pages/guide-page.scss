@@ -15,6 +15,18 @@
 
 .guide-page-info {
   padding: 80px 0 140px;
+  @media (max-width: $breakpoint-md) {
+    & .container {
+      padding: 0;
+    }
+    & .row {
+      margin: 0 10px;
+    }
+    & .text-center {
+      padding: 0 25px;
+    }
+  }
+
   & .section-subheading {
     @media (max-width: $breakpoint-xl) {
       width: 80%;
@@ -55,6 +67,9 @@
     width: 45%;
     @media (max-width: $breakpoint-xl) {
       width: 38%;
+    }
+    @media (max-width: $breakpoint-md) {
+      padding: 0 25px;
     }
     & li {
       font-weight: 500;

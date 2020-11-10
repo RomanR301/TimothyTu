@@ -3452,7 +3452,7 @@ button.swiper-pagination-bullet {
   }
 
   .services-slider .swiper-slide {
-    width: 42%;
+    width: 35%;
   }
 
   .services__logo {
@@ -3573,6 +3573,18 @@ button.swiper-pagination-bullet {
     width: 100%;
   }
 
+  .guide-page-info .container {
+    padding: 0;
+  }
+
+  .guide-page-info .row {
+    margin: 0 10px;
+  }
+
+  .guide-page-info .text-center {
+    padding: 0 25px;
+  }
+
   .guide-page-info .section-subheading {
     width: 100%;
   }
@@ -3592,6 +3604,10 @@ button.swiper-pagination-bullet {
     width: 100%;
     margin-bottom: 30px;
     height: unset;
+  }
+
+  .guide-page-info__text {
+    padding: 0 25px;
   }
 
   .guide-page-info__text li:before {
