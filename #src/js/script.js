@@ -38,6 +38,7 @@ let front = {
               centeredSlides: true,
               slidesPerView: 'auto',
               freeMode: true,
+              spaceBetween: 0,
             },
             767: {
               slidesPerView: 3,
@@ -47,7 +48,6 @@ let front = {
             },
             992: {
               slidesPerView: 4,
-              spaceBetween: 30,
               allowTouchMove: false,
             },
         }
@@ -87,6 +87,7 @@ let front = {
             allowTouchMove: true,
             centeredSlides: true,
             slidesPerView: 'auto',
+            spaceBetween: 0,
             freeMode: true,
           },
           767: {

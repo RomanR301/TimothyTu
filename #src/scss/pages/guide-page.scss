@@ -3,6 +3,9 @@
 
 .guide-page {
   &-video {
+    & .section-subheading {
+      margin-bottom: 50px;
+    }
     background: $lightGreyColor;
     & .section-video-content {
       padding-top: 10px;
@@ -11,7 +14,16 @@
 }
 
 .guide-page-info {
-  padding: 70px 0 100px;
+  padding: 80px 0 140px;
+  & .section-subheading {
+    @media (max-width: $breakpoint-xl) {
+      width: 80%;
+      margin: auto;
+    }
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+  }
   @media (max-width: $breakpoint-md) {
     padding: 60px 0 50px;
   }
@@ -19,38 +31,66 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 50px;
+    @media (max-width: $breakpoint-xl) {
+      // margin-top: 50px;
+    }
     @media (max-width: $breakpoint-md) {
       flex-direction: column;
     }
   }
   &__image {
     width: 45%;
+    height: 500px;
+    @media (max-width: $breakpoint-xl) {
+      width: 62%;
+    }
     @media (max-width: $breakpoint-md) {
       width: 100%;
       margin-bottom: 30px;
+      height: unset;
     }
   }
   &__text {
     width: 45%;
+    @media (max-width: $breakpoint-xl) {
+      width: 38%;
+    }
+    & li {
+      font-weight: 500;
+      font-size: 16px;
+      align-items: flex-start;
+      &:before {
+        width: 8px;
+        min-width: 8px;
+        height: 8px;
+        min-height: 8px;
+        margin-right: 15px;
+        margin-top: 13px;
+        @media (max-width: $breakpoint-md) {
+          margin-top: 8px;
+        }
+      }
+    }
     @media (max-width: $breakpoint-md) {
       width: 100%;
       & li {
         font-size: 12px;
-        &:before {
-          width: 8px;
-          min-width: 8px;
-          height: 8px;
-          min-height: 8px;
-        }
+
       }
     }
     & p {
       margin-bottom: 24px;
+      font-weight: 500;;
       @media (max-width: $breakpoint-md) {
         font-size: 12px;
         margin-bottom: 14px;
       }
+    }
+  }
+  & .list-title {
+    @media (max-width: $breakpoint-xl) {
+      margin-left: 16px;
     }
   }
 }
@@ -61,6 +101,15 @@
   @media (max-width: $breakpoint-md) {
     padding: 60px 0;
   }
+  & .section-heading {
+    margin-bottom: 60px;
+    @media (max-width: $breakpoint-lg) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 0;
+    }
+  }
   &__inner {
     margin-top: 50px;
     display: flex;
@@ -68,6 +117,7 @@
     justify-content: space-between;
     @media (max-width: $breakpoint-lg) {
       flex-direction: column;
+      margin-top: 0;
     }
   }
   &__image {
@@ -80,13 +130,15 @@
     }
   }
   &__description {
-    width: 78%;
+    width: 76%;
     text-align: right;
     @media (max-width: $breakpoint-lg) {
       text-align: center;
+      width: 100%;
     }
     @media (max-width: $breakpoint-md) {
       width: 100%;
+      font-weight: 500;
     }
     & a {
       color: $orangeColor;
@@ -98,6 +150,10 @@
       }
     }
   }
+}
+
+.guide-page-services {
+  background: #fff;
 }
 
 .guide-addition {
@@ -142,6 +198,7 @@
     }
     & p {
       margin-bottom: 20px;
+      font-weight: 500;
     }
     & a {
       color: $orangeColor;
@@ -160,34 +217,42 @@
   @media (max-width: $breakpoint-lg) {
     padding: 60px 20px 75px 20px;
   }
+  & .section-heading {
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 40px;
+    }
+  }
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     margin: auto;
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-lg) {
       width: 100%;
       flex-direction: column-reverse;
     }
   }
   &__heading {
-    @include fontSize(20, 40);
+    // @include fontSize(20, 40);
     text-align: center;
     margin-bottom: 50px;
   }
   &__text {
     width: 65%;
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-lg) {
       width: 100%;
     }
   }
   &__image {
     width: 14%;
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-lg) {
       width: 100%;
       display: flex;
       justify-content: center;
+      margin-bottom: 100px;
+    }
+    @media (max-width: $breakpoint-md) {
       margin-bottom: 40px;
     }
   }

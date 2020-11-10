@@ -26,8 +26,8 @@ ul {
 
 .section-btn {
   margin-top: 80px;
-  @media (max-width: $breakpoint-lg) {
-    margin-top: 70px;
+  @media (max-width: $breakpoint-md) {
+    margin-top: 60px;
   }
 }
 
