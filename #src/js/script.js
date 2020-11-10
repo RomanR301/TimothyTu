@@ -88,7 +88,7 @@ let front = {
             centeredSlides: true,
             slidesPerView: 'auto',
             spaceBetween: 0,
-            loop: false,
+            // loop: false,
             // freeMode: true,
           },
           767: {
